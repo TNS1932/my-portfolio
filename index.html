@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathene Stowe — Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 1rem;
+        }
+        
+        .about {
+            background-color: #ecf0f1;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .skill-card p {
+            color: #555;
+        }
+        
+        /* Resume & contact styling */
+        .resume {
+            background-color: #fff;
+        }
+
+        .resume .section-title {
+            margin-bottom: 1rem;
+        }
+
+        .resume h3 {
+            margin-top: 1rem;
+            color: #2c3e50;
+        }
+
+        .contact-info {
+            background-color: #ecf6ff;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Nathene Stowe</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome — I'm Nathene Stowe</h1>
+        <p>I'm a Data Scientist passionate about turning data into insights</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a dedicated data scientist with a passion for analyzing complex datasets and building predictive models. 
+            With expertise in machine learning, statistical analysis, and data visualization, I help organizations 
+            make data-driven decisions. I enjoy solving challenging problems and continuously learning new technologies 
+            in the data science field.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Data Science Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Advanced proficiency in Python for data analysis, machine learning, and statistical modeling</p>
+            </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <p>Experience with supervised and unsupervised learning algorithms, model evaluation, and optimization</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Visualization</h3>
+                <p>Creating compelling visualizations using Matplotlib, Seaborn, and Tableau</p>
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <p>Proficient in writing complex SQL queries for data extraction and manipulation</p>
+            </div>
+            <div class="skill-card">
+                <h3>Statistics</h3>
+                <p>Strong foundation in statistical analysis, hypothesis testing, and probability theory</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Cleaning</h3>
+                <p>Expert in data preprocessing, handling missing values, and data quality assurance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <div class="contact-info">
+            <strong>Nathene Stowe</strong><br>
+            📍 Charlotte, NC &nbsp; | &nbsp; 📞 <a href="tel:+13059812013">305-981-2013</a> &nbsp; | &nbsp; ✉️ <a href="mailto:Nathenestowe66@gmail.com">Nathenestowe66@gmail.com</a>
+        </div>
+
+        <div class="resume-content">
+            <h3>Objective</h3>
+            <p>Dedicated and dependable professional with a strong background in hands-on work, facility upkeep, and team leadership. Seeking a Maintenance Technician position where mechanical skill, attention to detail, and commitment to safety and service can contribute to a high-quality living environment for residents.</p>
+
+            <h3>Education</h3>
+            <p><strong>Southern New Hampshire University (SNHU)</strong> – Manchester, NH<br>
+            B.S. in Finance | Expected Graduation: Jan 2027 | GPA: 3.3<br>
+            Honors: Dean’s List (Fall 2024, Spring 2025)<br>
+            Relevant Coursework: Accounting Principles, Excel Modeling, Business Finance, Applied Statistics</p>
+
+            <h3>Professional Experience</h3>
+            <p><strong>Artisan Custom Cabinetry</strong> – Charlotte, NC<br>
+            <em>Lead Craftsman & Job Manager</em> | Sept 2022 – 2024</p>
+            <ul>
+                <li>Led production crews of 25–30 in high-end cabinetry projects, ensuring precision, safety, and quality control.</li>
+                <li>Maintained tools, equipment, and work areas; resolved repair issues on-site with limited supervision.</li>
+                <li>Managed daily scheduling, coordinated material deliveries, and handled customer requests and inspections.</li>
+            </ul>
+
+            <p><strong>H&amp;N Tools LLC</strong> – Charlotte, NC<br>
+            <em>Founder & Owner</em> | Nov 2020 – Present</p>
+            <ul>
+                <li>Operate a small tool and maintenance business, providing on-site repairs, installations, and equipment services.</li>
+                <li>Handle budgeting, customer service, and vendor relationships while maintaining tools and physical assets.</li>
+                <li>Developed a strong reputation for reliability, honesty, and quality workmanship in the Charlotte area.</li>
+            </ul>
+
+            <p><strong>IHOP Restaurant</strong> – Charlotte, NC<br>
+            <em>Shift Manager / Cook / Server</em> | 2016 – 2020</p>
+            <ul>
+                <li>Maintained kitchen equipment, performed routine cleanings, and assisted with back-of-house operations.</li>
+                <li>Handled minor building maintenance issues, such as fixing fixtures, unclogging drains, and maintaining HVAC filters.</li>
+                <li>Supervised staff, balanced supply orders, and ensured safety and cleanliness throughout the facility.</li>
+            </ul>
+
+            <h3>Technical & Maintenance Skills</h3>
+            <ul>
+                <li>General Repairs: Carpentry, plumbing, minor electrical, appliance servicing</li>
+                <li>Preventive Maintenance: Equipment upkeep, tool management, safety checks</li>
+                <li>Worksite Safety: OSHA awareness, clean work practices, PPE use</li>
+                <li>Tools & Equipment: Power tools, hand tools, ladders, shop equipment</li>
+                <li>Soft Skills: Problem-solving, time management, communication, accountability</li>
+            </ul>
+
+            <h3>Leadership & Involvement</h3>
+            <ul>
+                <li>Swim Team Captain – Taught discipline, led training, supported team growth</li>
+                <li>DECA Business Club – Competed in business challenges and developed strategic thinking</li>
+                <li>Chess Club Treasurer – Managed club funds, organized successful fundraisers</li>
+            </ul>
+
+            <h3>Certifications & Additional Info</h3>
+            <ul>
+                <li>Member: National Society of Leadership and Success (NSLS)</li>
+                <li>Coursework includes hands-on Excel modeling and financial management</li>
+                <li>Interests: Repair work, problem solving, leadership philosophy, serving the community</li>
+                <li>R-410A Safety</li>
+                <li>Universal (Core/type 1/Type 2/ Type 3)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>📍 Charlotte, NC &nbsp; | &nbsp; 📞 <a href="tel:+13059812013">305-981-2013</a> &nbsp; | &nbsp; ✉️ <a href="mailto:Nathenestowe66@gmail.com">Nathenestowe66@gmail.com</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Nathene Stowe — Built with care
+    </footer>
+</body>
+</html>
